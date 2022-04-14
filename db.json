@@ -1,0 +1,58 @@
+{
+  "productList": [
+    {
+      "productName": "Intel Core i9-12900K",
+      "category": "CPU",
+      "freshness": "Brand New",
+      "price": 900,
+      "delivery": "Lviv",
+      "date": "2022-04-11T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "ASUS RTX 4090 Ti ROG Strix 36GB",
+      "category": "Video Card",
+      "freshness": "Brand New",
+      "price": 2000,
+      "delivery": "Lviv",
+      "date": "2022-04-21T21:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "ASUS ROG STRIX Z690-E GAMING WIFI",
+      "category": "Motherboard",
+      "freshness": "Brand New",
+      "price": 550,
+      "delivery": "Lviv",
+      "date": "2022-04-21T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Samsung 980 Pro 250GB M.2 ",
+      "category": "SSD",
+      "freshness": "Brand New",
+      "price": 100,
+      "delivery": "Lviv",
+      "date": "2022-04-21T21:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Kingston Fury DDR5-5200",
+      "category": "Memory",
+      "freshness": "Brand New",
+      "price": 350,
+      "delivery": "Lviv",
+      "date": "2022-04-21T21:00:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "СВО Corsair iCUE H100i Elite Capellix",
+      "category": "Cooling system",
+      "freshness": "Brand New",
+      "price": 220,
+      "delivery": "Lviv",
+      "date": "2022-04-21T21:00:00.000Z",
+      "id": 6
+    }
+  ]
+}

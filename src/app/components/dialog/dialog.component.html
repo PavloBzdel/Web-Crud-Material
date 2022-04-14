@@ -1,0 +1,51 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+ <form [formGroup]="productForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Product Category</mat-label>
+    <mat-select formControlName="category"  placeholder="Category">
+      <mat-option value="CPU">CPU</mat-option>
+      <mat-option value="Video Card">Video Card</mat-option>
+      <mat-option value="Motherboard">Motherboard</mat-option>
+      <mat-option value="SSD">SSD</mat-option>
+      <mat-option value="Memory">Memory</mat-option>
+      <mat-option value="Cooling system">Cooling system</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Product Name</mat-label>
+    <input formControlName="productName" matInput placeholder="Name">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Choose a date</mat-label>
+    <input formControlName="date" matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <label for="">
+    <h1>Product</h1>
+  </label>
+  <mat-radio-group formControlName="freshness" class="example-radio-group">
+    <mat-radio-button *ngFor="let fresh of freshnessList" [value]="fresh" class="example-radio-button">
+      {{fresh}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input formControlName="price" matInput type="number" placeholder="100$">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Delivery</mat-label>
+    <mat-select formControlName="delivery"  placeholder="delivery">
+      <mat-option value="Lviv">Lviv</mat-option>
+      <mat-option value="Kyiv">Kyiv</mat-option>
+      <mat-option value="Odessa">Odessa</mat-option>
+      <mat-option value="Dnipro">Dnipro</mat-option>
+    </mat-select>
+  </mat-form-field>
+ </form>
+</div>
+<div mat-dialog-action [align]="'center'">
+<button mat-raised-button color="action" mat-dialog-close>Close</button>
+<button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()" >{{actionBtn}}</button>
+</div>
